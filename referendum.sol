@@ -33,7 +33,7 @@ contract ReferendumCoin {
 
 
     /// Create a new ballot with $(_numProposals) different proposals.
-    function Ballot(uint8 _numProposals) public {
+    function ReferendumCoin(uint8 _numProposals) public {
         chairperson = msg.sender;
         voters[chairperson].weight = 1;
         voters[chairperson].balanceOf = totalSupply;
