@@ -39,16 +39,13 @@ Coins Distribution : each voter will receive one ref-coin
 Referendum Community : companies which can KYC people of Earth
 Referendum date : ?
 
-How it works:
 
-Each eligible person will have 
-There will be two block chains
-Referendum Ledger
-	This blockchain will store the votes of each eligible person
-After the process of KYC finished for eligible person, he/she will receive secret key and public key, which can use it for voting
-Voting data structure will be like this:
+### referendum coin MVP
+This is MVP implementation for the referendum coin
+The coin will be created as a contract on the Etherium network. This contract requires a chairperson to watch the contract being executed and take care of distribution of coins after referendum has been finished.
+Initially the chair person will create a bailout with number of proposals. The chairperson also receive all the coins.
+After chairperson deployed the contract and distributed it over network on the certain period a voter will be eligible to vote to proposal.
+after referendum date passed and eligible votes participated in the referendum, the chairperson will announce the result and will distribute the coins.
+The rest of the coins which has not be allocated will be burnt by the chairperson.
 
-	| Vote Option | Timestamp | public key | Signature |
-Transaction Ledger
-	Upon finishing of referendum ,each voter will receive a coin in this edger which they can transfer money throughout the network.
-Everybody can create account on this ledger
+
